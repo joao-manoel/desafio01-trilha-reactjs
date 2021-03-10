@@ -24,8 +24,10 @@ export function TaskList() {
       isComplete: false
     }
 
-    setTasks([...tasks, newTask]);
+    console.log(Math.random())
 
+    setTasks(old => [...tasks, newTask]);
+    setNewTaskTitle('');
   }
 
   function handleToggleTaskCompletion(id: number) {
