@@ -23,10 +23,7 @@ export function TaskList() {
       title: newTaskTitle,
       isComplete: false
     }
-
-    console.log(Math.random())
-
-    setTasks(old => [...tasks, newTask]);
+    setTasks([...tasks, newTask]);
     setNewTaskTitle('');
   }
 
